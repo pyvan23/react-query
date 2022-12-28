@@ -1,4 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
+import React from "react";
 
 import { getProducts } from "../api/productsApi";
 
@@ -20,11 +21,11 @@ export const Products = () => {
     console.log(products);
     
 
-    return products.map((product,index) => (
-        <>
+    return products.map((product) => (
+        <React.Fragment key={product.id}>
             <ul>
-                <li key={product.id}>{product.name}</li>
+                <li >{product.name}</li>
             </ul>
-        </>
+        </React.Fragment>
     ));
 };
