@@ -22,10 +22,13 @@ export const Products = () => {
     
 
     return products.map((product) => (
-        <React.Fragment key={product.id}>
+        <div key={product.id}>
             <ul>
                 <li >{product.name}</li>
+                <li >{product.description}</li>
+                <li >{product.price}</li>
             </ul>
-        </React.Fragment>
+            
+        </div>
     ));
 };
