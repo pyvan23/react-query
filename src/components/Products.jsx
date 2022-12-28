@@ -1,24 +1,30 @@
-import { useQuery } from '@tanstack/react-query'
+import { useQuery } from "@tanstack/react-query";
 
-import { getProducts } from '../api/productsApi'
+import { getProducts } from "../api/productsApi";
 
 export const Products = () => {
+    const {
+        isLoading,
+        data: products,
+        isError,
+        error,
+    } = useQuery({
+        queryKey: ["products"],
+        queryFn: getProducts,
+    });
 
-    const { isLoading, data:products, isError , error} = useQuery({
-        queryKey:['products'],
-        queryFn: getProducts
+    if (isLoading) return  <>...Loading</>;        
+    
+    
+    if (isError) return <>{error.message}</>;
+    console.log(products);
+    
 
-    })
-
-    if(isLoading) return <>...Loading</>
-    if(isError) return <>{error.message}</>
-
-    console.log(products)
-    return products.map(product=>
+    return products.map((product) => (
         <>
-        <div key={product.id}>{product.name}</div>
-        </>)
-    
-        
-    
-}
+            <ul>
+                <li key={product.id}>{product.name}</li>
+            </ul>
+        </>
+    ));
+};
