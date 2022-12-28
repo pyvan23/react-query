@@ -20,7 +20,7 @@ export const Products = () => {
     console.log(products);
     
 
-    return products.map((product) => (
+    return products.map((product,index) => (
         <>
             <ul>
                 <li key={product.id}>{product.name}</li>
