@@ -1,12 +1,14 @@
 import "./App.css";
 import { Products } from "./components/Products";
+import { ProductsForm } from "./components/ProductsForm";
 
 function App() {
   return (
-    <div>
+    <>
       <h1>React Query!</h1>
+      <ProductsForm/>
       <Products />
-    </div>
+    </>
   );
 }
 
