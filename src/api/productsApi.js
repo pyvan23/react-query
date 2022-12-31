@@ -5,7 +5,8 @@ const productsApi = axios.create({
 });
 
 export const getProducts = async () => {
-    const resp =   await productsApi.get("/products");
+  const resp = await productsApi.get("/products");
 
-    return resp.data
+  return resp.data;
 };
+export const postProducts = (product) => productsApi.post("/products",product);
