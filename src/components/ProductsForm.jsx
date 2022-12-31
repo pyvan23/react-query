@@ -1,12 +1,18 @@
+import { useMutation } from "@tanstack/react-query";
+import { postProducts } from "../api/productsApi";
+
 export const ProductsForm = () => {
-  const handleSubmit = (e) => {
+  const addProductMutation = useMutation({ mutationFn: postProducts });
+
+  const handleSubmit = ( e ) => {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const products = Object.fromEntries(formData);
+    const formData = new FormData( e.target );
+    const products = Object.fromEntries( formData );
+    addProductMutation.mutate( products );
   };
 
   return (
-    <form onSubmit={handleSubmit} action="text">
+    <form onSubmit={ handleSubmit } action="text">
       <label htmlFor="name">name</label>
       <input type="text" id="name" name="name" />
       <label htmlFor="description">Description</label>

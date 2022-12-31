@@ -1,32 +1,50 @@
 {
-    "products": [
-      {
-        "name": "laptop",
-        "price": "1000",
-        "description": "asdadad",
-        "inStock": true,
-        "id": 1
-      },
-      {
-        "name": "pc",
-        "price": "1000",
-        "description": "asdsad",
-        "inStock": true,
-        "id": 2
-      },
-      {
-        "name": "adsad",
-        "price": "12123",
-        "description": "asdasdad",
-        "inStock": true,
-        "id": 3
-      },
-      {
-        "name": "new",
-        "price": "12321",
-        "description": "asdasdad new",
-        "inStock": true,
-        "id": 4
-      }
-    ]
-  }
+  "products": [
+    {
+      "name": "laptop",
+      "price": "1000",
+      "description": "asdadad",
+      "inStock": true,
+      "id": 1
+    },
+    {
+      "name": "pc",
+      "price": "1000",
+      "description": "asdsad",
+      "inStock": true,
+      "id": 2
+    },
+    {
+      "name": "adsad",
+      "price": "12123",
+      "description": "asdasdad",
+      "inStock": true,
+      "id": 3
+    },
+    {
+      "name": "new",
+      "price": "12321",
+      "description": "asdasdad new",
+      "inStock": true,
+      "id": 4
+    },
+    {
+      "name": "juan",
+      "description": "ivan",
+      "price": "1222",
+      "id": 5
+    },
+    {
+      "name": "ram",
+      "description": "8gb",
+      "price": "1222",
+      "id": 6
+    },
+    {
+      "name": "cpuv3",
+      "description": "micro procesador",
+      "price": "6",
+      "id": 7
+    }
+  ]
+}

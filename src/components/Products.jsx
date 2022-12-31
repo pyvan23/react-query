@@ -1,10 +1,5 @@
-import { useMutation, useQuery } from "@tanstack/react-query";
-import React from "react";
-
+import { useQuery } from "@tanstack/react-query";
 import { getProducts } from "../api/productsApi";
-
-
-const addProductMutation = useMutation({ mutationFn: getProducts })
 
 export const Products = () => {
   const {
