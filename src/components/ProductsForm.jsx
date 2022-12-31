@@ -5,10 +5,12 @@ export const ProductsForm = () => {
   const addProductMutation = useMutation({ mutationFn: postProducts });
 
   const handleSubmit = ( e ) => {
+
     e.preventDefault();
     const formData = new FormData( e.target );
     const products = Object.fromEntries( formData );
-    addProductMutation.mutate( products );
+    addProductMutation.mutate({ ...products, stock:true   });
+
   };
 
   return (

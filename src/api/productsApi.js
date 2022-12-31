@@ -9,4 +9,5 @@ export const getProducts = async () => {
 
   return resp.data;
 };
-export const postProducts = (product) => productsApi.post("/products",product);
+
+export const postProducts = (products) => productsApi.post("/products", products);

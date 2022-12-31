@@ -45,6 +45,55 @@
       "description": "micro procesador",
       "price": "6",
       "id": 7
+    },
+    {
+      "name": "cpuv3",
+      "description": "micro procesador",
+      "price": "6",
+      "id": 8
+    },
+    {
+      "name": "jose",
+      "description": "micro procesador",
+      "price": "6",
+      "id": 9
+    },
+    {
+      "name": "gggnasndal",
+      "description": "micro procesador",
+      "price": "6",
+      "id": 10
+    },
+    {
+      "name": "attaque",
+      "description": "micro procesador",
+      "price": "6",
+      "id": 11
+    },
+    {
+      "products": {
+        "name": "flema",
+        "description": "micro procesador",
+        "price": "6"
+      },
+      "stock": true,
+      "id": 12
+    },
+    {
+      "products": {
+        "name": "flema",
+        "description": "micro procesador",
+        "price": "6"
+      },
+      "stock": true,
+      "id": 13
+    },
+    {
+      "name": "flema",
+      "description": "micro procesador",
+      "price": "6",
+      "stock": true,
+      "id": 14
     }
   ]
 }
