@@ -3,12 +3,13 @@ import { postProducts } from "../api/productsApi";
 
 
 export const ProductsForm = () => {
-  
+
   const queryClient = useQueryClient();
 
   const addProductMutation = useMutation({
     mutationFn: postProducts,
      onSuccess: () => {
+      //invalida el get anterior, compara y agrega los nuevos productos
       queryClient.invalidateQueries('products')
       console.log('el producto se agrego')
     }
@@ -21,8 +22,6 @@ export const ProductsForm = () => {
     const formData = new FormData(e.target);
     const products = Object.fromEntries(formData);
     addProductMutation.mutate({ ...products, stock: true });
-  
-
   };
 
   return (
