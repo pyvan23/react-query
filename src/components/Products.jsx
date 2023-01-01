@@ -21,7 +21,7 @@ export const Products = () => {
     onSuccess: () => {
       //invalida el get anterior, compara y agrega los nuevos productos
       queryClient.invalidateQueries('products')
-      console.log('el producto se elimino')
+      
     }
 
   })
