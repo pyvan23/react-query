@@ -1,3 +1,11 @@
 {
-  "products": []
+  "products": [
+    {
+      "name": "manzana",
+      "description": "fruta",
+      "price": "200",
+      "stock": true,
+      "id": 1
+    }
+  ]
 }
