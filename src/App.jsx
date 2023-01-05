@@ -1,19 +1,20 @@
 import "./App.css";
 import { Products } from "./components/Products";
 import { ProductsForm } from "./components/ProductsForm";
-import { QueryCache } from 'react-query';
 import { QuerieSearch } from "./components/QuerieSearch";
+import { SearchForm } from "./components/SearchForm";
 
 
 
 function App() {
   return (
     <>
-     <QueryCache>
+     
       <QuerieSearch/>
+      <SearchForm/>
       <ProductsForm/>
       <Products />
-    </QueryCache>
+    
     </>
   );
 }
